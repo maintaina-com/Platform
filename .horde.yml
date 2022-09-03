@@ -1,0 +1,32 @@
+---
+id: platform
+name: Platform
+full: OO library for detecting platform type and running external commands
+description: >-
+  Free other code from intricacies of calling OS commands and external programs.
+  Wrap OS execution into predictable OO interfaces.
+  Provides an OO interface to platform detection and execution of Operating System commands
+list: horde
+type: component
+authors:
+    name: Ralf Lang
+    user: rlang
+    email: ralf.lang@ralf-lang.de
+    active: true
+    role: lead
+version:
+  release: 0.0.1
+  api: 0.0.1
+state:
+  release: alpha
+  api: alpha
+license:
+  identifier: LGPL-2.1-only
+  uri: http://www.horde.org/licenses/lgpl21
+dependencies:
+  required:
+    php: ^8.1 || ^9
+  dev:
+    composer:
+      horde/test: ^3
+      phpunit/phpunit: ^9 || ^10

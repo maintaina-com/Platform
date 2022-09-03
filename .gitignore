@@ -1,0 +1,36 @@
+.DS_Store
+.buildpath
+.cache
+.project
+.settings
+nbproject/
+*~
+.#*
+*.bak
+*.orig
+*.rej
+*.swp
+*.kdev4
+.kdev4/*
+
+# Ignore ALL config files
+conf.php
+
+# Ignore testing files
+run-tests.log
+/test/*/*/*.diff
+/test/*/*/*.exp
+/test/*/*/*.log
+/test/*/*/*.out
+/test/*/*/*/*.diff
+/test/*/*/*/*.exp
+/test/*/*/*/*.log
+/test/*/*/*/*.out
+
+# Ignore test harness / quality tools output
+.php-cs-fixer.cache
+.phpunit.cache/
+
+# ignore composer artifacts
+composer.lock
+vendor/

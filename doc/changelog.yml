@@ -1,0 +1,12 @@
+---
+0.0.1:
+  api: 0.0.1
+  state:
+    release: alpha
+    api: alpha
+  date: 2022-09-02
+  license:
+    identifier: MIT
+    uri: https://opensource.org/licenses/MIT
+  notes: |
+    [rla] Initial release as factored out from horde/vcs and horde/component.
