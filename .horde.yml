@@ -26,6 +26,8 @@ license:
 dependencies:
   required:
     php: ^8.1 || ^9
+    composer:
+      psr/log: ^3
   dev:
     composer:
       horde/test: ^3

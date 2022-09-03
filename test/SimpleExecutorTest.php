@@ -39,5 +39,4 @@ class SimpleExecutorTest extends TestCase
         $this->assertEquals('foo', $result->getOutputArray()[0]);
         $this->assertEquals('foo', $result->getOutputString());
     }
-
 }

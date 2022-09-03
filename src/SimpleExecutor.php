@@ -25,7 +25,6 @@ class SimpleExecutor
 {
     public function __construct(private LoggerInterface $logger = new NullLogger())
     {
-
     }
     /**
      * Run the command

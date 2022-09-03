@@ -3,7 +3,8 @@
     "description": "OO interface to detecting Linux/Windows platform and running external commands.",
     "type": "library",
     "require": {
-        "php": "^8.1 || ^9"
+        "php": "^8.1 || ^9",
+        "psr/log": "^3"
     },
     "license": "MIT",
     "autoload": {
