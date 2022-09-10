@@ -10,10 +10,10 @@ declare(strict_types=1);
 
 namespace Horde\Platform;
 
-class PlatformDetector implements PlatformDetectorInterface
+class OperatingSystem implements OperatingSystemInterface
 {
-    public function detectOperatingSystem(): OperatingSystemInterface
+    public function getFamily(): string
     {
-        return new OperatingSystem();
+        return '';
     }
 }
