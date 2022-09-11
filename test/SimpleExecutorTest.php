@@ -19,7 +19,7 @@ class SimpleExecutorTest extends TestCase
     public function testRunningNonExistingCommand()
     {
         $run = new SimpleExecutor();
-        $result = $run('magiccommand');
+        $result = $run('magiccommand &>/dev/stdout');
         $this->assertInstanceOf(ExecutionResult::class, $result);
         $this->assertInstanceOf(ExecutionResultInterface::class, $result);
         $this->assertIsInt($result->getReturnCode());
