@@ -120,6 +120,7 @@ class UnixCommand
         foreach ($this->extraEnvironment as $key => $value) {
             $cmdLine .= $key . '=' . $value . ' ';
         }
+        // Tradeoff: Not catching missing executable and letting PHP throw an Error vs depending on Horde's exception interface.
         $cmdLine .= $this->executable;
         if ($this->stack) {
             $cmdLine .= ' ';
@@ -131,6 +132,7 @@ class UnixCommand
     public static function fromArray(array $args, Environment $env = new Environment, LoggerInterface $logger = new NullLogger): UnixCommand
     {
         $cmd = new UnixCommand($env, $logger);
+        $cmd->withExecutable(array_shift($args));
         foreach ($args as $argument) {
             $cmd->withArgument($argument);
         }

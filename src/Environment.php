@@ -9,8 +9,12 @@ use ValueError;
 
 class Environment implements IteratorAggregate
 {
-    public function __construct(array $vars = getenv())
+    public function __construct(?array $vars = null)
     {
+        // PHP 8.1 does not allow getenv in the constructor
+        if ($vars === null) {
+            $this->vars = getenv();
+        }
     }
 
     public function getIterator(): Traversable
